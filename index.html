@@ -182,7 +182,7 @@
     <form id="login-form">
        <h2>🎉 A Birthday Surprise Just for You! 🎂</h2>
 
-<label for="code">Hey birthday girl/Boy, <br>can you type your beautiful name below?</label>
+<label for="code">Hey birthday Sister, <br>can you type your beautiful name below?</label>
 
 <input type="text" id="code" name="code" placeholder="Type your name here...">
 
@@ -197,7 +197,7 @@
         const codeInput = document.getElementById('code');
         const resultDiv = document.getElementById('result');
 
-        const secretCode = 'Shobhit'; // The correct name
+        const secretCode = 'Ranjit'; // The correct name
         const nextPageUrl = 'home.html'; // The page to go to on success
 
         form.addEventListener('submit', (e) => {
@@ -205,7 +205,7 @@
             const userInput = codeInput.value.trim();
 
             if (userInput.toLowerCase() === secretCode.toLowerCase()) {
-                resultDiv.textContent = 'Welcome, Birthday Girl/Boy!';
+                resultDiv.textContent = 'Welcome, Birthday Battery!';
                 form.style.transition = "transform 0.5s ease, opacity 0.5s ease";
                 form.style.transform = "scale(1.1)";
                 form.style.opacity = "0";
@@ -248,4 +248,5 @@
         createFloatingHearts(document.querySelector('.floating-hearts'), 30);
     </script>
 </body>
+
 </html>
